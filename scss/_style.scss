@@ -39,7 +39,14 @@ nav {
         line-height: $big-font;
     }
 
-    button {
+    p {
+        font-size: 14px;
+        line-height: 21px;
+        margin: $mid-font auto;
+        letter-spacing: 0.5px;
+    }
+
+    .start {
         background-color: $color1;
         color: $color2;
         padding: 12px 42px;
@@ -103,5 +110,28 @@ nav {
             }
         }
         
+    }
+}
+
+.about {
+    @extend .headline;
+    h2 {
+        @extend h2;
+    }
+    p {
+        @extend p;
+        margin: 0;
+    }
+    
+    button {
+        @extend .start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        img {
+            width: $mid-font;
+            margin-left: 12px;
+        } 
     }
 }

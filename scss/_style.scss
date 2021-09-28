@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: $main-size;
+    background-color: $color4;
+    img {
+        width: 111px;
+    }
+    .middle-image {
+        width: $hundred;
+        margin-bottom: $marginT;
+    }
+    h2 {
+        font-size: $big-font;
+        margin: $marginT auto;
+        width: $ninety;
+    }
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    a {
+        img {
+            align-self: flex-end;
+            width: 20px;
+            // float: right;
+        }
+    }
+}
+
+.headline {
+    width: $ninety;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    h1 {
+        color: $color1;
+        font-size: $big-font;
+        line-height: $big-font;
+    }
+
+    button {
+        background-color: $color1;
+        color: $color2;
+        padding: 12px 42px;
+        border: none;
+        margin: $marginT 0;
+    }
+    
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    img {
+        width: $hundred;
+        margin-bottom: 0;
+    }
+    .projects-wrapper {
+        background-color: $color1;
+        h3 {
+            color: $color2;
+            font-size: $mid-font;
+            font-weight: 300;
+            margin: $mid-font auto;
+            width: $ninety;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            width: $ninety;
+            margin: $mid-font auto;
+            li {
+                margin-right: 10px;
+                a {
+                    color: $color1;
+                    text-decoration: none;
+                    background-color: $color3;
+                    font-size: 11px;
+                    padding: 6px 10px;
+    
+                }
+            }
+        }
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $color2;
+            background-color: $color1;
+            color: $color2;
+            padding: 10px;
+            font-size: 16px;
+            width: $ninety;
+            margin: $mid-font auto;
+            span {
+                img{
+                    width: $mid-font;
+                    margin-left: 12px;
+                }
+                
+            }
+        }
+        
+    }
+}

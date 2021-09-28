@@ -157,3 +157,45 @@ nav {
         @extend .blue;
     }
 }
+
+.forms {
+    margin-top: $big-font;
+    background-color: #f9f9fA;
+    h2 {
+        @extend h2;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 21px;
+        margin: $mid-font auto;
+        letter-spacing: 0.5px;
+        width: $ninety;
+    }
+    form {
+        width: $ninety;
+        margin: $mid-font auto;
+        input {
+            width: $ninety;
+            margin: 12px auto;
+            border: 1px solid #dfdfe0;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 4px 0 33px 16px;
+        }
+
+        textarea {
+            resize: none;
+            @extend input;
+            height: 122px;
+        }
+
+        button {
+            background-color: $color1;
+            color: $color2;
+            padding: 12px 42px;
+            border: none;
+            width: $ninety;
+            margin: 0 auto;
+    }
+}
+}
